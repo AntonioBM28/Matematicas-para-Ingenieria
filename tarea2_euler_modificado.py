@@ -163,7 +163,7 @@ def dibujar_pagina(pdf, prob, h):
 # ──────────────────────────────────────────────
 # Main
 # ──────────────────────────────────────────────
-OUTPUT = "/mnt/user-data/outputs/tarea2_euler_modificado.pdf"
+OUTPUT = "tarea2_euler_modificado.pdf"
 
 with PdfPages(OUTPUT) as pdf:
     for prob in PROBLEMAS:
@@ -171,4 +171,4 @@ with PdfPages(OUTPUT) as pdf:
             print(f"  Problema {prob['label']}  h={h} ...", flush=True)
             dibujar_pagina(pdf, prob, h)
 
-print(f"\n✔  PDF generado: {OUTPUT}")
+print(f"\n[OK]  PDF generado: {OUTPUT}")
